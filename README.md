@@ -2,7 +2,6 @@
 Instructions:
 clone, make, and run `./puzzle` and view results in `output.txt`
 
-Notes about program:
 This is a program that recursively found a solution to a wooden block puzzle.
 The block puzzle consists of 25 blocks shaped in this manner:
 ```
