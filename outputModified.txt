@@ -1,0 +1,33 @@
+Output file has been slightly modified (not true output format)
+Program ran for 139 seconds (2 min, 19 sec)
+The program laid down and picked up 111,851,005 before finding the valid combo.
+Level: 1
+1  2  2  2  2
+3  4  5  6  7
+5  5  5  5  7
+8  9  10 7  7
+10 10 10 10 7
+Level: 2
+1  4  11 2  12
+3  4  13 6  14
+8  15 15 15 15
+8  9  16 17 18
+19 17 17 17 17
+Level: 3
+1  1  11 6  12
+3  4  13 6  14
+3  9  13 15 14
+8  9  16 20 18
+19 20 20 20 20
+Level: 4
+1  11 11 12 12
+3  4  13 6  14
+21 22 22 22 22
+8  9  16 22 18
+19 19 16 23 18
+Level: 5
+21 24 11 25 12
+21 24 13 25 14
+21 24 24 25 25
+21 24 16 25 18
+19 23 23 23 23
