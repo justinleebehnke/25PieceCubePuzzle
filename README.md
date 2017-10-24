@@ -7,7 +7,8 @@ Notes about program:
 *******VIEW AS RAW TO SEE DIAGRAM*******
 This is a program that recursively found a solution to a wooden block puzzle.
 The block puzzle consists of 25 blocks shaped in this manner:
-```    ___
+```
+       ___
       |   |
  _____|   |___________
 |                     |
