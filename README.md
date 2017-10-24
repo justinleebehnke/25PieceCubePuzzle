@@ -1,6 +1,8 @@
 # 25PieceCubePuzzle
 Instructions:
 clone, make, and run `./puzzle` and view results in `output.txt`
+The output file is as though, once the cube was assembled, it were sliced into 5 levels then laid out from bottom to top. The 
+numbers in each cell represent the pieces of each wooden block found on that layer. Try and visiualize all 5 layers immediately ontop of one another.
 
 This is a program that recursively found a solution to a wooden block puzzle.
 The block puzzle consists of 25 blocks shaped in this manner:
