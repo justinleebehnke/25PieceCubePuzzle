@@ -1,4 +1,5 @@
 # 25PieceCubePuzzle
+*******VIEW AS RAW TO SEE DIAGRAM*******
 This is a program that recursively found a solution to a wooden block puzzle.
 The block puzzle consists of 25 blocs shaped in this manner:
        ___
