@@ -27,5 +27,3 @@ of this in just 2 and a half minutes!
 
 Interesting note: When the machine is asked to only fit 24 blocks into the cube, it can find a valid combo in less than one
 second. This just shows how much more computationally difficult a perfect fit is for this puzzle.
-
-![photo](https://github.com/justinleebehnke/25PieceCubePuzzle/blob/master/photosOfPuzzle/IMG_1249.JPG)
