@@ -1,5 +1,5 @@
 # CubicConundrum
-**A brute force solver for the 25-piece cube puzzle**
+**This is a program that recursively found a solution to a wooden block puzzle.**
 
 This program leverages recursion to brute force a solution to the 5x5x5 cube
 puzzle composed of 25 y-shaped
@@ -20,9 +20,9 @@ The results of the solver will be stored in `output.txt`.
 
 ## Details
 The output file is as though, once the cube was assembled, it was sliced into
-5 levels then laid out from bottom to top. The numbers in each cell represent
+5 levels then laid out from bottom to top (left to right below). The numbers in each cell represent
 the pieces of each wooden block found on that layer. Try and visualize all 5
-layers immediately on top of one another.
+layers immediately on top of one another. In the demo above, the blocks are laid in the order shown here, 3 blocks at a time.
 
 ```
 Level: 1        Level: 2         Level: 3         Level: 4         Level: 5
@@ -36,10 +36,17 @@ Level: 1        Level: 2         Level: 3         Level: 4         Level: 5
 The blocks are composed of 5 "units" and the cube is 5x5x5. There are 72
 different ways to lay a block from any given starting cell. The puzzle requires
 that no cells remain empty, every cell must be occupied by a unit from a cell.
-There are 125 cells in the cube. This program tries every possible combination
-recursively and halts when a valid combination is found, such as the one
-pictured below.
+There are 125 cells in the cube. 
+
+After laying the first block, the program will move to the next empty cell and attempt to lay 
+a block using that cell as its starting point. If a block is laid it will continue to lay blocks
+until it reaches an empty cell where none of the 72 ways are valid for starting from that cell. 
+It will then recurse to the last block laid, remove it from the cube, and attempt to lay a block 
+in the next sequential position of the original 72 available from that same starting cell.
+
+This characteristic of not moving past empty cells is what allows the program to so rapidly identify
+partial combinations as invalid and progress toward a perfect fit such as the one pictured below.
+Without this characteristic, the program would have to attempt all of the 25^72 possible combinations and
+individually check each one for validity.
 
 ![complete](img/complete.jpg)
-
-
