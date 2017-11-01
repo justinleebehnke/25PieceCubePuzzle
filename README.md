@@ -1,5 +1,5 @@
 # CubicConundrum
-**This is a program that recursively found a solution to a wooden block puzzle.**
+**A recursive search tool to solve the ["Almost Impossible"](http://www.puzzle-factory.com/25pccube.html) 25-piece cube puzzle.**
 
 This program leverages recursion to brute force a solution to the 5x5x5 cube
 puzzle composed of 25 y-shaped
@@ -40,7 +40,7 @@ There are 125 cells in the cube.
 
 After laying the first block, the program will move to the next empty cell and attempt to lay 
 a block using that cell as its starting point. If a block is laid it will continue to lay blocks
-until it reaches an empty cell where none of the 72 ways are valid for starting from that cell. 
+until it reaches an empty cell where none of the 72 ways to lay are valid starting from that cell. 
 It will then recurse to the last block laid, remove it from the cube, and attempt to lay a block 
 in the next sequential position of the original 72 available from that same starting cell.
 
