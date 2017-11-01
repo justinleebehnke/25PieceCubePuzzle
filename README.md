@@ -38,13 +38,21 @@ different ways to lay a block from any given starting cell. The puzzle requires
 that no cells remain empty, every cell must be occupied by a unit from a cell.
 There are 125 cells in the cube. 
 
-After laying the first block, the program will move to the next empty cell and attempt to lay 
-a block using that cell as its starting point. If a block is laid it will continue to lay blocks
-until it reaches an empty cell where none of the 72 ways to lay are valid starting from that cell. 
-It will then recurse to the last block laid, remove it from the cube, and attempt to lay a block 
-in the next sequential position of the original 72 available from that same starting cell.
+## How it works
+Starting from the first cell, the program tries to lay a block in the first position of the 72 ways.
+Before laying the block, it checks if the cells of the cube that it will need are already being used 
+by the either the wall of the cube or by another block. If the cells it needs are being used, it tries the
+next option on the list of 72 ways until a valid potential position is found. After the first
+block is laid, the program will check the next cell to see if it is empty. If empty, it will require 
+that a block be laid to fill that cell. Otherwise, it will move to the next empty cell.
 
-This characteristic of not moving past empty cells is what allows the program to so rapidly identify
+It will continue to lay blocks in empty cells until it comes to an empty cell where none of the 72
+moves are valid. The program will then take one step back to the most recently laid block, remove it
+from the cube, and attempt to lay it down again in the next valid orientation of the remaining 72 that it has 
+not yet attempted. Once the program finds a way to get all 25 blocks in the cube, it will halt and print
+out the current occupancy of each of the 125 cells in the cube.
+
+The characteristic of not moving past empty cells is what allows the program to so rapidly identify
 partial combinations as invalid and progress toward a perfect fit such as the one pictured below.
 Without this characteristic, the program would have to attempt all of the 25^72 possible combinations and
 individually check each one for validity.
