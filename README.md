@@ -1,7 +1,7 @@
 # CubicConundrum
 **A recursive search tool to solve the ["Almost Impossible"](http://www.puzzle-factory.com/25pccube.html) 25-piece cube puzzle.**
 
-This program leverages recursion to brute force a solution to the 5x5x5 cube
+This program leverages a recursive branch and bound algorithm to find solution to the 5x5x5 cube
 puzzle composed of 25 y-shaped
 [pentominoes](https://en.wikipedia.org/wiki/Pentomino). It does so by
 exhaustively trying different sequences for laying down the 25-pieces in order
